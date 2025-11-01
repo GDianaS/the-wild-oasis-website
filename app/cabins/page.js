@@ -1,5 +1,12 @@
+// import Counter from "../_components/Counter";
+import Counter from "@/app/_components/Counter";
+
+
 export default function Page(){
     return(
-        <h1>Cabins Page</h1>
+        <div>
+            <h1>Cabins Page</h1>
+
+        </div>
     )
 }
