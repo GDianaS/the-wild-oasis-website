@@ -3,6 +3,7 @@
 /* npm install @heroicons/react */
 /* https://tailwindcss.com/docs/theme */
 @theme{
+  /* Cores */
   --color-primary-50:#e1e8ef;
   --color-primary-100:#d4dee7;
   --color-primary-200:#b7c7d7;
