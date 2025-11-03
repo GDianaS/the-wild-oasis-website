@@ -1,11 +1,10 @@
 import Spinner from "@/app/_components/Spinner";
 
-// Global Component
-// Loading necessita de Stremming => Javascript vai precisar está ativo no browser
 export default function Loading(){
     return(
         <div className="grid items-center justify-center">
             <Spinner/>
+            <p className="text-xl text-primary-200">Loading cabins data...</p>
         </div>
     );
 }

@@ -12,7 +12,7 @@ export async function getCabin(id) {
     .eq('id', id)
     .single();
 
-  // For testing
+  // For testing : slow down data fetching
   // await new Promise((res) => setTimeout(res, 1000));
 
   if (error) {
