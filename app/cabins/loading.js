@@ -1,3 +1,4 @@
+// será válido para todo o seguimento de rotas cabins e seus filhos ([cabinId])
 import Spinner from "@/app/_components/Spinner";
 
 export default function Loading(){
