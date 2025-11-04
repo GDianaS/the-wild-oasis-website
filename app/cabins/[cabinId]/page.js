@@ -15,6 +15,13 @@ import Image from "next/image";
 //     "https://dclaevazetcjjkrzczpc.supabase.co/storage/v1/object/public/cabin-images/cabin-001.jpg",
 // };
 
+export async function generateMetadata({params}){
+    const {cabinId} = await params;
+    const {name} = await getCabin(cabinId);
+    return {
+        title: `Cabin ${name}`
+    }
+}
 
 export default async function Page({params}) {
     const {cabinId} = await params;
