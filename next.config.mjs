@@ -10,6 +10,10 @@ const nextConfig = {
       },
     ],
   },
+// Export as a Static Site Generation => arquivo out que vai para um renderizador
+// Para isso, as páginas deverão ser todas estáticas
+// npm run build
+//  output:"export"
 };
 
 export default nextConfig;
