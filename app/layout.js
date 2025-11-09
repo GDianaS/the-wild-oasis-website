@@ -13,6 +13,7 @@ const josefin = Josefin_Sans({
 
 import "@/app/_styles/globals.css";
 import Header from "./_components/Header";
+import { ReservationProvider } from "./_components/ReservationContext";
 
 // metadata quando em uma página específica, sobreescreve o metadata do layout
 export const metadata={
@@ -33,10 +34,15 @@ export default function RootLayout({children}){
 
                 <div className="flex-1 px-8 py-12 grid">
                     <main className="max-w-7xl mx-auto w-full">
-                        {children}
+                        <ReservationProvider>
+                            {children}
+                        </ReservationProvider>
                     </main>
                 </div>
             </body>
         </html>
     )
 }
+
+//Quando você coloca o Provedor no RootLayout, você está dizendo ao React que o Context (ReservationContext) deve estar acessível para toda a sub-árvore de componentes que ele envolve.
+//Isso significa que, a partir de agora, qualquer componente dentro de qualquer página que chame o Hook useReservation() terá acesso imediato aos dados de reserva (range) e às funções para alterá-los (setRange, resetRange).

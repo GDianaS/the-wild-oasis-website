@@ -59,9 +59,15 @@
 } 
 
 /* For data picker */
- .rdp {
+.rdp {
   --rdp-cell-size: 32px !important;
   --rdp-accent-color: var(--color-accent-50) !important;
   --rdp-background-color: var(--color-accent-600)  !important;
   margin: 0 !important;
+}
+
+/* Garante o layout dos meses lado a lado */
+.rdp-months {
+  display: flex !important;
+  gap: 3rem; /* Adiciona um espaço entre os dois calendários */
 }
